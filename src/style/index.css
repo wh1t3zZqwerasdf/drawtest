@@ -1,0 +1,77 @@
+/* 重置一些基础样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+  background-color: #f0f2f5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 一些通用的工具类 */
+.full-width {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* 图片处理器相关的全局样式 */
+.image-processor {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.canvas-container {
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+/* 工具栏样式 */
+.toolbar {
+  background: #fff;
+  padding: 16px;
+  border-radius: 2px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* 控制面板样式 */
+.controls {
+  background: #fff;
+  padding: 16px;
+  border-radius: 2px;
+  margin-top: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* 滑块组件样式优化 */
+.ant-slider {
+  margin: 6px 0 16px;
+}
+
+/* 按钮组样式优化 */
+.ant-space {
+  flex-wrap: wrap;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  .image-processor {
+    padding: 10px;
+  }
+  
+  .toolbar,
+  .controls {
+    padding: 12px;
+  }
+}
